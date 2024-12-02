@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Help</title>
+    <link rel="stylesheet" href="char.css">
+    <script src="charity_profile.js" defer></script> <!-- Make sure the filename is correct -->
+</head>
+
+<body>
+    <div style="width:1900px;height:160px;background-color: white;"></div> 
+
+    <!-- Navigation -->
+    <nav class="topnav">
+        <a href="index.html">Home</a>
+        <a href="charities.html">Charities list</a>
+    </nav>
+
+    <!-- About the charity -->
+    <h2 class="headings">About the Charity</h2>
+    <p class="words">
+        Wounded Warrior Project is an established organization for veterans and wounded soldiers. 
+        They help provide for them and give them therapy. If you would like to help in this cause, 
+        apply to volunteer. You can click on the sign-up button to find where you can volunteer.
+    </p>
+    
+    <!-- Sign Up Form -->
+    <h1 id="sign">Sign Up</h1>
+    <form action="submit-form.php" method="post" id="volunteerForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <button id="volunteer-btn" type="submit">Volunteer now</button>
+    </form>
+</body>
+</html>
